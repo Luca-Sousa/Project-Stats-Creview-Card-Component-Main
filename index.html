@@ -8,17 +8,50 @@
   
   <title>Project | Stats preview card component</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+
+  <link href="src/output.css" rel="stylesheet">
 </head>
-<body>
+<body class="w-auto min-h-screen flex items-center justify-center bg-Very-dark-blue rounded-2xl">
 
-  Get insights that help your business grow.
+  <main class="w-auto ml-5 mr-5 bg-Dark-desaturated-blue rounded-xl lg:max-w-7xl lg:flex lg:justify-between">
 
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
+    <div class="relative sm:flex sm:justify-center lg:order-2 lg:w-[45%]">
+      <div class="w-full rounded-t-xl bg-purple-950 opacity-60 absolute inset-0 lg:rounded-t-none lg:rounded-e-xl"></div>
+      <img class="w-full rounded-t-xl lg:hidden" src="images/image-header-mobile.jpg" alt="image-header-mobile">
+      <img class="hidden lg:flex w-full h-full lg:rounded-e-xl" src="images/image-header-desktop.jpg" alt="image-header-desktop">
+    </div>
+    
+    <section class="p-7 sm:px-20 lg:order-1 lg:flex lg:flex-col lg:items-center lg:justify-center lg:w-[55%] lg:p-24">
 
-  10k+ companies
-  314 templates
-  12m+ queries
+      <div class="text-center font-Inter flex flex-col items-center lg:text-left">
+        <h1 class="text-White font-bold text-3xl mb-5 max-w-sm sm:max-w-md md:max-w-xl lg:text-4xl">Get <span class="text-Soft-violet">insights</span> that help your business grow.</h1>
+        <p class="text-Slightly-transparent-white-p text-base max-w-sm sm:max-w-md md:max-w-xl lg:text-lg">Discover the benefits of data analytics and make better decisions regarding revenue customer experience, and overall efficiency.</p>  
+      </div>
+
+      <section class="w-full mt-8 text-center font-LexendDeca uppercase sm:flex sm:items-center sm:justify-between lg:mt-16 lg:text-left">
+        <div>
+          <h2 class="text-White text-xl">10k+</h2>
+          <p class="text-Slightly-transparent-white-h text-base">companies</p>
+        </div>
+
+        <div class="mt-5 sm:mt-0">
+          <h2 class="text-White text-xl">314</h2>
+          <p class="text-Slightly-transparent-white-h text-base">templates</p>
+        </div>
+
+        <div class="mt-5 sm:mt-0">
+          <h2 class="text-White text-xl">12m+</h2>
+          <p class="text-Slightly-transparent-white-h text-base">queries</p>
+        </div>
+      </section>
+
+    </section>
+
+  </main>
 
 </body>
 </html>
